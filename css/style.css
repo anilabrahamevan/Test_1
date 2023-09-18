@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+html, body * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: papayawhip;
+}
+
+
+#obj{
+    width: 50%;
+    transform: translateX(50%);
+    transform: translateY(50%);
+}
+
+
+.cls-1 {
+  fill: #49a1af;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #c67a16;
+}
+
+.cls-3 {
+  fill: #e4a114;
+}
+
+.cls-5, .cls-11 {
+  fill: none;
+}
+
+.cls-6 {
+  fill: #b77b11;
+}
+
+.cls-7 {
+  fill: #8c1b1b;
+}
+
+.cls-8 {
+  fill: #d79114;
+}
+
+.cls-12 {
+  filter: url(#AI_Shadow_1);
+}
+
+.cls-13 {
+  filter: url(#AI_BevelShadow_1);
+}
+
+.cls-11 {
+  stroke: #510e0e;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+.cls-9 {
+  fill: #fdc613;
+}
+
+.cls-10 {
+  fill: #757575;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/style.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 632.8">
+  <defs>
+   
+    <filter id="AI_Shadow_1">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2"/>
+      <feOffset dx="4" dy="1" in="blur" result="offsetBlurredAlpha"/>
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="AI_BevelShadow_1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="4"/>
+      <feOffset dx="4" dy="4" in="blur" result="offsetBlur"/>
+      <feSpecularLighting in="blur" result="specOut" specularConstant="1" specularExponent="10" surfaceScale="5">
+        <fePointLight x="-5000" y="-10000" z="-20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" k1="0" k2="1" k3="1" k4="0" operator="arithmetic" result="litPaint"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="border">
+    <rect class="cls-5" x="99" y="32.8" width="1000" height="600"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="letterbg">
+      <rect class="cls-6" x="99" y="32.8" width="1001" height="476"/>
+      <g id="letter">
+        <rect class="cls-1" x="158" y="52.8" width="894" height="554"/>
+        <rect class="cls-10" x="335" y="169.8" width="598" height="42"/>
+        <rect class="cls-10" x="284" y="232.8" width="656" height="42"/>
+        <rect class="cls-10" x="282" y="290.8" width="656" height="42"/>
+        <rect class="cls-10" x="276" y="93.8" width="185" height="42"/>
+      </g>
+      <polygon class="cls-9" points="99 32.8 99 632.8 599 364.8 99 32.8"/>
+      <polygon class="cls-8" points="1100 31.8 1100 631.8 623 361.8 1100 31.8"/>
+      <polygon class="cls-2" points="1099 632.8 660 355.8 674 344.8 1099 568.8 1099 632.8"/>
+      <polygon class="cls-3" points="1098.91 632.8 98.91 632.8 602.91 319.8 1098.91 632.8"/>
+    </g>
+    <g id="letterTop" class="cls-12">
+      <path class="cls-3" d="m100,33.8v89.39l456.16,237.35c29.04,15.11,64.57,15,93.49-.29l450.34-237.99V33.8H100Z"/>
+    </g>
+    <circle id="seal1" class="cls-7" cx="600" cy="393.8" r="69"/>
+    <g id="seal2" class="cls-13">
+      <circle class="cls-11" cx="600" cy="392.8" r="60"/>
+    </g>
+    <path id="seal3" class="cls-4" d="m593.68,380.8c2.13,0,8.65,0,10.7,0,.39,0,.77-.11,1.1-.33,3.08-2.04,20.18-11.69,19.55,26.45,0,.6-1.55,2.5-2.02,2.88-2.15,1.7-7.37,3.69-14-11h-19s-5.56,13.19-12.62,11.81c-2.65-.52-4.43-3.05-4.3-5.75.43-9.32,3.09-36.86,19.37-24.48.35.27.78.43,1.22.43Z"/>
+  </g>
+</svg>
